@@ -8,18 +8,12 @@
 #     puts 'no'
 #     else
 #     puts 'error'
-#     end
+# end
 
-def random
-    result = ["true", "false", ""].sample
-    if result == "true"
-        puts 'sí'
-    elsif result == "false"
-        puts 'no'
-    else
-        puts 'error'
-    end
+def random?
+    result = ['true', 'false'].sample
+    puts result=='true' ? 'si' : 'no'
 end
 
-10.times do random
+10.times do random?
 end
